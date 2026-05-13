@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Labour Rights Insights Dashboard</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f5f7fb;
+      --card: #ffffff;
+      --border: #d8deea;
+      --text: #162033;
+      --accent: #315efb;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+    }
+    main {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 2rem 1rem 4rem;
+    }
+    .hero, .section, .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(22, 32, 51, 0.06);
+    }
+    .hero {
+      padding: 2rem;
+      margin-bottom: 1.5rem;
+    }
+    .hero h1 {
+      margin-top: 0;
+    }
+    .stats, .cards {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    }
+    .stat {
+      padding: 1rem;
+      background: #eef2ff;
+      border-radius: 12px;
+    }
+    .stat strong {
+      display: block;
+      font-size: 1.8rem;
+      color: var(--accent);
+    }
+    .cards {
+      margin: 1.5rem 0;
+    }
+    .card {
+      padding: 1rem 1.25rem;
+    }
+    .section {
+      padding: 1.25rem;
+      margin-top: 1rem;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 0.75rem;
+      border-bottom: 1px solid var(--border);
+      text-align: left;
+      vertical-align: top;
+    }
+    ul {
+      padding-left: 1.25rem;
+      margin-bottom: 0;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <p><strong>Insight-driven labour rights project</strong></p>
+      <h1>Labour Rights Insights Dashboard</h1>
+      <p>This starter project turns multiple labour-related CSV datasets into a single dashboard for comparing worker voice, safety, and equity outcomes.</p>
+      <div class="stats">
+        <div class="stat"><span>Datasets</span><strong>3</strong></div>
+        <div class="stat"><span>Countries</span><strong>3</strong></div>
+        <div class="stat"><span>Metrics</span><strong>5</strong></div>
+        <div class="stat"><span>Coverage</span><strong>2021–2024</strong></div>
+      </div>
+    </section>
+    <section class="cards"><article class='card'><p>Chile, South Africa, and Sweden each improved in 5 tracked metrics, signalling broad-based momentum across the latest period.</p></article><article class='card'><p>The dashboard currently combines 3 datasets across 3 countries from 2021 to 2024.</p></article><article class='card'><p>The latest snapshot covers 5 labour-rights metrics, making it easier to compare worker voice, safety, and equity outcomes together.</p></article></section>
+    <section class="section">
+      <h2>Latest metric spotlights (2024)</h2>
+      <table>
+        <thead>
+          <tr><th>Metric</th><th>Theme</th><th>Top country</th><th>Latest value</th></tr>
+        </thead>
+        <tbody><tr><td>Collective bargaining coverage</td><td>Worker voice</td><td>Sweden</td><td>90.0%</td></tr><tr><td>Gender pay gap</td><td>Equity</td><td>Sweden</td><td>9.0%</td></tr><tr><td>Labour inspection coverage</td><td>Safety</td><td>Sweden</td><td>84.0%</td></tr><tr><td>Serious injury rate</td><td>Safety</td><td>Sweden</td><td>2.3 per 100k workers</td></tr><tr><td>Union density</td><td>Worker voice</td><td>Sweden</td><td>66.0%</td></tr></tbody>
+      </table>
+    </section>
+    <section class="section">
+      <h2>Country momentum</h2>
+      <table>
+        <thead>
+          <tr><th>Country</th><th>Improving metrics</th><th>Stagnant metrics</th></tr>
+        </thead>
+        <tbody><tr><td>Chile</td><td>5</td><td>0</td></tr><tr><td>South Africa</td><td>5</td><td>0</td></tr><tr><td>Sweden</td><td>5</td><td>0</td></tr></tbody>
+      </table>
+    </section>
+    <section class="section">
+      <h2>Theme snapshot</h2>
+      <table>
+        <thead>
+          <tr><th>Theme</th><th>Tracked metrics</th><th>Latest observations</th></tr>
+        </thead>
+        <tbody><tr><td>Equity</td><td>1</td><td>3</td></tr><tr><td>Safety</td><td>2</td><td>6</td></tr><tr><td>Worker voice</td><td>2</td><td>6</td></tr></tbody>
+      </table>
+    </section>
+    <section class="section">
+      <h2>Datasets in use</h2>
+      <ul><li><strong>Collective Bargaining</strong>: ILOSTAT, OECD Collective Bargaining Database</li><li><strong>Equity</strong>: World Bank Gender Data Portal</li><li><strong>Workplace Safety</strong>: ILO Labour Inspection Statistics, ILO Safety and Health Data</li></ul>
+    </section>
+  </main>
+</body>
+</html>

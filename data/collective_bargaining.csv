@@ -1,0 +1,13 @@
+country,year,theme,metric,value,unit,goal_direction,source
+Chile,2021,Worker voice,Collective bargaining coverage,42,%,higher,OECD Collective Bargaining Database
+Chile,2024,Worker voice,Collective bargaining coverage,47,%,higher,OECD Collective Bargaining Database
+Sweden,2021,Worker voice,Collective bargaining coverage,88,%,higher,OECD Collective Bargaining Database
+Sweden,2024,Worker voice,Collective bargaining coverage,90,%,higher,OECD Collective Bargaining Database
+South Africa,2021,Worker voice,Collective bargaining coverage,31,%,higher,OECD Collective Bargaining Database
+South Africa,2024,Worker voice,Collective bargaining coverage,35,%,higher,OECD Collective Bargaining Database
+Chile,2021,Worker voice,Union density,19,%,higher,ILOSTAT
+Chile,2024,Worker voice,Union density,22,%,higher,ILOSTAT
+Sweden,2021,Worker voice,Union density,64,%,higher,ILOSTAT
+Sweden,2024,Worker voice,Union density,66,%,higher,ILOSTAT
+South Africa,2021,Worker voice,Union density,24,%,higher,ILOSTAT
+South Africa,2024,Worker voice,Union density,27,%,higher,ILOSTAT
