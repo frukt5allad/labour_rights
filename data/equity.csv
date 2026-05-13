@@ -1,0 +1,7 @@
+country,year,theme,metric,value,unit,goal_direction,source
+Chile,2021,Equity,Gender pay gap,21,%,lower,World Bank Gender Data Portal
+Chile,2024,Equity,Gender pay gap,18,%,lower,World Bank Gender Data Portal
+Sweden,2021,Equity,Gender pay gap,11,%,lower,World Bank Gender Data Portal
+Sweden,2024,Equity,Gender pay gap,9,%,lower,World Bank Gender Data Portal
+South Africa,2021,Equity,Gender pay gap,29,%,lower,World Bank Gender Data Portal
+South Africa,2024,Equity,Gender pay gap,26,%,lower,World Bank Gender Data Portal

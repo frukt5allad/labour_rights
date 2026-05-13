@@ -1,0 +1,13 @@
+country,year,theme,metric,value,unit,goal_direction,source
+Chile,2021,Safety,Labour inspection coverage,57,%,higher,ILO Labour Inspection Statistics
+Chile,2024,Safety,Labour inspection coverage,63,%,higher,ILO Labour Inspection Statistics
+Sweden,2021,Safety,Labour inspection coverage,81,%,higher,ILO Labour Inspection Statistics
+Sweden,2024,Safety,Labour inspection coverage,84,%,higher,ILO Labour Inspection Statistics
+South Africa,2021,Safety,Labour inspection coverage,49,%,higher,ILO Labour Inspection Statistics
+South Africa,2024,Safety,Labour inspection coverage,56,%,higher,ILO Labour Inspection Statistics
+Chile,2021,Safety,Serious injury rate,4.2,per 100k workers,lower,ILO Safety and Health Data
+Chile,2024,Safety,Serious injury rate,3.5,per 100k workers,lower,ILO Safety and Health Data
+Sweden,2021,Safety,Serious injury rate,2.8,per 100k workers,lower,ILO Safety and Health Data
+Sweden,2024,Safety,Serious injury rate,2.3,per 100k workers,lower,ILO Safety and Health Data
+South Africa,2021,Safety,Serious injury rate,6.4,per 100k workers,lower,ILO Safety and Health Data
+South Africa,2024,Safety,Serious injury rate,5.8,per 100k workers,lower,ILO Safety and Health Data
