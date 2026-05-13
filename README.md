@@ -14,10 +14,10 @@ The generated dashboard is designed to make it easy to compare countries, spot r
 
 ## Project structure
 
-- `/home/runner/work/labour_rights/labour_rights/data` — sample labour-rights datasets in a shared CSV format
-- `/home/runner/work/labour_rights/labour_rights/src/generate_dashboard.py` — dashboard/report generator
-- `/home/runner/work/labour_rights/labour_rights/tests/test_generate_dashboard.py` — focused validation for the generator
-- `/home/runner/work/labour_rights/labour_rights/site/index.html` — generated dashboard output
+- `data/` — sample labour-rights datasets in a shared CSV format
+- `src/generate_dashboard.py` — dashboard/report generator
+- `tests/test_generate_dashboard.py` — focused validation for the generator
+- `site/index.html` — generated dashboard output
 
 ## CSV schema
 
@@ -30,15 +30,13 @@ Each dataset should use the following columns:
 ## Generate the dashboard
 
 ```bash
-cd /home/runner/work/labour_rights/labour_rights
 python src/generate_dashboard.py
 ```
 
-This writes the dashboard to `/home/runner/work/labour_rights/labour_rights/site/index.html`.
+Run the command from the repository root. This writes the dashboard to `site/index.html`.
 
 ## Run the focused tests
 
 ```bash
-cd /home/runner/work/labour_rights/labour_rights
 python -m unittest discover -s tests
 ```
