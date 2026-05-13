@@ -55,6 +55,21 @@ def is_improvement(previous: Record, current: Record) -> bool:
     return current.value > previous.value
 
 
+def choose_best(records: list[Record]) -> Record:
+    directions = {record.goal_direction for record in records}
+    if len(directions) != 1:
+        raise ValueError("Records for the same metric must share one goal_direction.")
+    direction = directions.pop()
+    selector = min if direction == "lower" else max
+    return selector(records, key=lambda record: record.value)
+
+
+def format_country_list(countries: list[str]) -> str:
+    if len(countries) <= 2:
+        return " and ".join(countries)
+    return ", ".join(countries[:-1]) + f", and {countries[-1]}"
+
+
 def build_summary(records: list[Record]) -> dict[str, object]:
     if not records:
         raise ValueError("No CSV records found in the data directory.")
@@ -78,9 +93,7 @@ def build_summary(records: list[Record]) -> dict[str, object]:
         latest_records = [record for record in metric_records if record.year == latest_year]
         if not latest_records:
             continue
-        best = max(latest_records, key=lambda record: record.value)
-        if latest_records[0].goal_direction == "lower":
-            best = min(latest_records, key=lambda record: record.value)
+        best = choose_best(latest_records)
         latest_spotlights.append(
             {
                 "metric": metric,
@@ -136,7 +149,7 @@ def build_summary(records: list[Record]) -> dict[str, object]:
     if len(top_countries) == 1:
         momentum_card = f"{top_countries[0]} shows the strongest recent momentum, improving in {top_improvement_count} tracked metrics."
     else:
-        leaders = ", ".join(top_countries[:-1]) + f", and {top_countries[-1]}" if len(top_countries) > 2 else " and ".join(top_countries)
+        leaders = format_country_list(top_countries)
         momentum_card = f"{leaders} each improved in {top_improvement_count} tracked metrics, signalling broad-based momentum across the latest period."
 
     insight_cards = [
